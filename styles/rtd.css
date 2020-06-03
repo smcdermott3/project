@@ -3,28 +3,38 @@
     h1 {text-align: center; color: black; font-family: Verdana, Geneva, Tahoma, sans-serif;}
     #title {color: rgb(180, 1, 1); background-color: black; font-family: Georgia;}
     h2 {font-family: Georgia; font-size: 20px;}
+    h3 {color: black; font-family: Georgia;}
+    h4 {font-family: Verdana; text-align: right; margin-right: 60px;}
+
     p {font-family: Verdana; margin-left: 30px; margin-right: 60px; 
         text-align: justify;}
     body {margin:  40px;}
     #last_word {color: rgb(180, 1, 1); font-family: Georgia; font: 1em;}
     #first_word {letter-spacing: 3px; font-family: Verdana; font-size: 0.9em;}
-    h4 {font-family: Verdana; text-align: right; margin-right: 60px;}
+    
     a {color: rgb(180, 1, 1); text-decoration: none;}
     a:hover {background-color: black; color: rgb(180, 1, 1); text-decoration: none;}
+    button {background-color: rgb(180,1,1); 
+        color: black; font-family: Georgia; font-weight: bold; border: black; border-radius: 5%;}
+    button:hover {background-color: rgb(114, 1, 1); border-radius: 20%;}
+    #fixedbutton {position: fixed; bottom: 10px; right: 10px;}
+    
+    nav ul {list-style-type: none; margin: 0; padding: 0;}
+    nav li {display: inline-block;}
+    
+    .card {box-shadow: 0 4px 8px 0 rgb(0, 0, 1); transition: .2s; margin: 20px;}
+    .card:hover {box-shadow: 0 8px 16px 0 rgb(0, 0, 2);}
+    .container {padding: 2px 16px;}
+  
+   
+   
+    /* below is dark mode */
     .dark-mode {background-color: rgb(0, 0, 0); color: rgb(230, 230, 230);}
     .dark-mode>h1 {color: rgb(230, 230, 230);}
     .dark-mode #title {color: black; background-color: rgb(180, 1, 1);}
     .dark-mode a:hover {background-color: whitesmoke;}
     .dark-mode hr {color: rgb(230, 230, 230); border-color: white;}
-    button {background-color: rgb(180,1,1); 
-        color: black; font-family: Georgia; font-weight: bold; border: black; border-radius: 5%;}
-    button:hover {background-color: rgb(114, 1, 1); border-radius: 20%;}
-    #fixedbutton {position: fixed; bottom: 10px; right: 10px;}
-    nav ul {list-style-type: none; margin: 0; padding: 0;}
-    nav li {display: inline-block;}
-    .card {box-shadow: 0 4px 8px 0 rgb(0, 0, 1); transition: .2s; margin: 20px;}
-    .card:hover {box-shadow: 0 8px 16px 0 rgb(0, 0, 2);}
-    .container {padding: 2px 16px;}
     .dark-mode .card {background-color: rgb(22, 22, 22);}
     .dark-mode .card:hover {box-shadow: 0 8px 16px 0 rgb(77, 77, 77);}
     .dark-mode .container {padding: 2px 16px}
+    .dark-mode h3 {color:  rgb(180, 1, 1);}
