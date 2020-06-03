@@ -1,5 +1,5 @@
     /* This page is designed to look like the Notorious BIG's album, "Ready to Die" */
-    hr {background-color: black; height: 2px;}
+    hr {border-color: black;}
     h1 {text-align: center; color: black; font-family: Verdana, Geneva, Tahoma, sans-serif;}
     #title {color: rgb(180, 1, 1); background-color: black; font-family: Georgia;}
     h2 {font-family: Georgia; font-size: 20px;}
@@ -15,7 +15,7 @@
     .dark-mode>h1 {color: rgb(230, 230, 230);}
     .dark-mode #title {color: black; background-color: rgb(180, 1, 1);}
     .dark-mode a:hover {background-color: whitesmoke;}
-    .dark-mode hr {color: rgb(230, 230, 230);}
+    .dark-mode hr {color: rgb(230, 230, 230); border-color: white;}
     button {background-color: rgb(180,1,1); 
         color: black; font-family: Georgia; font-weight: bold; border: black; border-radius: 5%;}
     button:hover {background-color: rgb(114, 1, 1); border-radius: 20%;}
