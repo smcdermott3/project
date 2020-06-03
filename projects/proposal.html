@@ -19,7 +19,8 @@ body {margin:  40px;}
 h4 {font-family: Verdana; text-align: right; margin-right: 60px;}
 a {color: rgb(180, 1, 1); text-decoration: none;}
 a:hover {background-color: black; color: rgb(180, 1, 1); text-decoration: none;}
-
+.dark-mode {background-color: darkgray; color: rgb(233, 233, 233);}
+    button {margin-left: 97%; margin-right: 3%;}
 
 </style>
 <hr color="black">
@@ -76,6 +77,16 @@ a:hover {background-color: black; color: rgb(180, 1, 1); text-decoration: none;}
 
 
 <h4><a href="project_sitemap.html" target="_blank"> &nbsp; Sitemap &nbsp; </a></h4>
+
+ <!-- below, dark mode button -->
+ <button onclick="myFunction()">Toggle Dark Mode</button>
+ <script>
+     function myFunction() {
+         var element = document.body;
+         element.classList.toggle("dark-mode");}
+ </script>
+ <!-- above, dark mode button -->
+
 
 </body>
 
