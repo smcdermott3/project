@@ -25,8 +25,9 @@
     .card {box-shadow: 0 4px 8px 0 rgb(0, 0, 1); transition: .2s; margin: 20px;}
     .card:hover {box-shadow: 0 8px 16px 0 rgb(0, 0, 2);}
     .container {padding: 2px 16px;}
-  
-   
+    .card p {margin-left: 200px; margin-top: -10px;}
+    .card h3 {margin-left: 200px; margin-top: -200px;}
+
    
     /* below is dark mode */
     .dark-mode {background-color: rgb(0, 0, 0); color: rgb(230, 230, 230);}
@@ -34,7 +35,7 @@
     .dark-mode #title {color: black; background-color: rgb(180, 1, 1);}
     .dark-mode a:hover {background-color: whitesmoke;}
     .dark-mode hr {color: rgb(230, 230, 230); border-color: white;}
-    .dark-mode .card {background-color: rgb(22, 22, 22);}
+    .dark-mode .card {background-color: rgb(22, 22, 22); box-shadow: 0 4px 8px 0 rgb(77, 77, 76)}
     .dark-mode .card:hover {box-shadow: 0 8px 16px 0 rgb(77, 77, 77);}
     .dark-mode .container {padding: 2px 16px}
     .dark-mode h3 {color:  rgb(180, 1, 1);}
