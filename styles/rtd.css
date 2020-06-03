@@ -25,3 +25,6 @@
     .card {box-shadow: 0 4px 8px 0 rgb(0, 0, 1); transition: .2s; margin: 20px;}
     .card:hover {box-shadow: 0 8px 16px 0 rgb(0, 0, 2);}
     .container {padding: 2px 16px;}
+    .dark-mode .card {background-color: rgb(22, 22, 22);}
+    .dark-mode .card:hover {box-shadow: 0 8px 16px 0 rgb(77, 77, 77);}
+    .dark-mode .container {padding: 2px 16px}
