@@ -43,8 +43,9 @@
     .dark-mode>h1 {color: rgb(230, 230, 230);}
     .dark-mode #title {color: black; background-color: rgb(180, 1, 1);}
     .dark-mode a:hover {background-color: whitesmoke;}
+    .dark-mode button a:hover {background-color: none;}
     .dark-mode hr {color: rgb(230, 230, 230); border-color: white;}
     .dark-mode .card {background-color: rgb(22, 22, 22); box-shadow: 0 4px 8px 0 rgb(77, 77, 76)}
     .dark-mode .card:hover {box-shadow: 0 8px 16px 0 rgb(77, 77, 77);}
     .dark-mode .container {padding: 2px 16px}
-    .dark-mode h3 {color:  rgb(180, 1, 1);}
+    .dark-mode h3 {color: rgb(180, 1, 1);}
