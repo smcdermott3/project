@@ -19,6 +19,6 @@
     button {background-color: rgb(180,1,1); 
         color: black; font-family: Georgia; font-weight: bold; border: black; border-radius: 5%;}
     button:hover {background-color: rgb(114, 1, 1); border-radius: 20%;}
-    #fixedbutton {position: fixed; bottom: 10px; right: 30px;}
+    #fixedbutton {position: fixed; bottom: 10px; right: 10px;}
     nav ul {list-style-type: none; margin: 0; padding: 0;}
     nav li {display: inline-block;}
