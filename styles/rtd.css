@@ -34,18 +34,20 @@
     a#sitemap_universal:hover {background-color: none;}
     button#sitemap_universal {padding-top: 5px; padding-right: 8px; padding-bottom: 4px; padding-left: 8px;}
    
+
     div.review {margin-right: 300px;}
     div.youtube {float: right; margin-top: -110px;}
 
 
     /* below is dark mode */
     .dark-mode {background-color: rgb(0, 0, 0); color: rgb(230, 230, 230);}
-    .dark-mode>h1 {color: rgb(230, 230, 230);}
+    .dark-mode h1 {color: whitesmoke;}
     .dark-mode #title {color: black; background-color: rgb(180, 1, 1);}
     .dark-mode a:hover {background-color: whitesmoke;}
-    .dark-mode button a:hover {background-color: none;}
-    .dark-mode hr {color: rgb(230, 230, 230); border-color: white;}
+    .dark-mode a:hover #sitemap_universal {background-color: none;}
+    .dark-mode hr {color: whitesmoke; border-color: whitesmoke;}
     .dark-mode .card {background-color: rgb(22, 22, 22); box-shadow: 0 4px 8px 0 rgb(77, 77, 76)}
     .dark-mode .card:hover {box-shadow: 0 8px 16px 0 rgb(77, 77, 77);}
     .dark-mode .container {padding: 2px 16px}
     .dark-mode h3 {color: rgb(180, 1, 1);}
+
