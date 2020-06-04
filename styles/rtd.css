@@ -19,7 +19,7 @@
     button:hover {background-color: rgb(114, 1, 1); border-radius: 20%;}
     #fixedbutton {position: fixed; bottom: 10px; right: 5px;}
     
-    nav ul {list-style-type: none; margin: 0; padding: 0;}
+    nav ul {list-style-type: none; margin: 0; padding: 0; text-align: center;}
     nav li {display: inline-block;}
     
     .card {box-shadow: 0 4px 8px 0 rgb(0, 0, 1); transition: .2s; margin: 20px;}
@@ -33,6 +33,7 @@
     .container {padding: 2px 16px;}
     .review p {margin-left: 340px; margin-top: -10px; color: black;}
     .review h3 {margin-left: 325px; margin-top: -300px;}
+    .review a:hover {background-color: black; color: rgb(180, 1, 1); text-decoration: none;}
 
     .youtube {float: left; margin-top: -110px;}
 
