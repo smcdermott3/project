@@ -22,7 +22,7 @@
     nav ul {list-style-type: none; margin: 0; padding: 0; text-align: center;}
     nav li {display: inline-block;}
     
-    .card {box-shadow: 0 4px 8px 0 rgb(0, 0, 1); transition: .2s; margin: 20px;}
+    .card {box-shadow: 0 4px 8px 0 rgb(0, 0, 1); transition: .2s; margin: 10px;}
     .card:hover {box-shadow: 0 8px 16px 0 rgb(0, 0, 2);}
     .container {padding: 2px 16px;}
     .card p {margin-left: 200px; margin-top: -10px;color: black;}
