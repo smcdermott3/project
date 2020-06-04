@@ -3,27 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Catalogue</title>
-
-<style>
-    
-    table, th, td {border: black solid 2px;
-        border-collapse: collapse; margin-left: auto; margin-right: auto; 
-        width: 1000px;}
-        td {text-align: center;}
-        th {background-color: lawngreen;}
-        caption {font-family: Impact; font-size:  3em;}
-        tr:nth-child(even) {background-color: lightblue;}
-        tr:nth-child(odd) {background-color: lightcoral;}
-        td:nth-child(1) {text-align: left;}
-        tr:hover {background-color: khaki;}
-
-
-</style>
+    <title>Song Information</title>
+    <link rel="stylesheet" type="text/css" href="/styles/rtd.css">
 
 </head>
 <body>
-    <table><caption>Song Information</caption>
+
+    <h1>song <span id="title">&nbsp; INFORMATION &nbsp; </span> </h1>
+    <nav>
+        <li> <h4 style="text-align: center;"><a href="index.html"> &nbsp; Home &nbsp; </a></h4> </li>
+        <li> <h4 style="text-align: center;"><a href="about_the_artist.html"> &nbsp; About the Artist &nbsp; </a></h4> </li>
+    </nav>
+<hr>
+
+<h2><span id="first_word">Data</span>&nbsp;from all of the songs <span id="last_word"> reviewed</span></h2>
+
+<p>Below is a complete data set of all of the songs that have been reviewed on this site. 
+    It includes much basic data and information that can be used to identify that song on 
+    platforms such as Spotify or YouTube. 
+</p>
+
+
+
+
+
+    <table>
         <tr id="header">
             <th>Name</th>
             <th>Artist</th>
@@ -57,30 +61,57 @@
             <td>Yes</td>
         </tr>
         <tr>
-            <td>Devil in a New Dress</td>
-            <td>Kanye West</td>
-            <td>My Beautiful Dark Twisted Fantasy</td>
-            <td>5:52</td>
+            <td>Too Deep</td>
+            <td>dvsn</td>
+            <td>SEPT 5TH</td>
+            <td>3:20</td>
+            <td>R&B</td>
+            <td>No</td>
+        </tr>
+        <tr>
+            <td>Actin Crazy</td>
+            <td>Action Bronson</td>
+            <td>Mr. Wonderful</td>
+            <td>3:59</td>
             <td>Hip-Hop</td>
             <td>Yes</td>
         </tr>
         <tr>
-            <td>Devil in a New Dress</td>
-            <td>Kanye West</td>
-            <td>My Beautiful Dark Twisted Fantasy</td>
-            <td>5:52</td>
+            <td>Timezones</td>
+            <td>Manila Grey</td>
+            <td>No Saints Under Palm Shade</td>
+            <td>3:39</td>
             <td>Hip-Hop</td>
             <td>Yes</td>
         </tr>
         <tr>
-            <td>Devil in a New Dress</td>
-            <td>Kanye West</td>
-            <td>My Beautiful Dark Twisted Fantasy</td>
-            <td>5:52</td>
+            <td>m.A.A.d. city</td>
+            <td>Kendrick Lamar</td>
+            <td>good kid, m.A.A.d. city</td>
+            <td>5:50</td>
             <td>Hip-Hop</td>
             <td>Yes</td>
         </tr>
+
         </table> 
+
+
+
+        <button id="sitemap_universal"><a href="project_sitemap.html" class="sitemap_universal"><img src="/images/globe.png" alt="" height="18px"></a>
+        </button>
+        
+         <!-- below, dark mode button -->
+         <button id="fixedbutton" onclick="myFunction()">
+        <img src="/images/dark_mode.png" alt="DarkMode" height="25px">
+        </button>
+         <script>
+             function myFunction() {
+                 var element = document.body;
+                 element.classList.toggle("dark-mode");}
+         </script>
+         <!-- above, dark mode button -->
+        
+        <!-- it would be neat to add a return to top button icon -->
 
 </body>
 </html>
