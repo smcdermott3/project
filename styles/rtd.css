@@ -40,8 +40,13 @@
     a#sitemap_universal:hover {background-color: none;}
     button#sitemap_universal {padding-top: 5px; padding-right: 8px; padding-bottom: 4px; padding-left: 8px;}
    
-    #map {margin-left: auto; margin-right: auto;}
+    #map {float: right; margin-top: -600px; margin-right: 20px;}
     
+    label {font-family: Verdana; width: 100px; display: inline-block;}
+    form div {font-family: Verdana; margin-top: 3px;}
+    #typehere {width: 300px;}
+    #bigboy {width: 588px;}
+    #send_plane {padding: 20px;}
 
 
     /* below is dark mode */
@@ -57,4 +62,4 @@
     .dark-mode h3 {color: rgb(180, 1, 1);}
     .dark-mode .review {background-color: rgb(22, 22, 22); box-shadow: 0 4px 8px 0 rgb(77, 77, 76)}
     .dark-mode .review:hover {box-shadow: 0 8px 16px 0 rgb(77, 77, 77);}
-
+    .dark-mode label {color: whitesmoke;}
