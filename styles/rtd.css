@@ -28,7 +28,7 @@
     .card p {margin-left: 200px; margin-top: -10px;color: black;}
     .card h3 {margin-left: 200px; margin-top: -200px;}
 
-    .review {box-shadow: 0 4px 8px 0 rgb(0, 0, 1); transition: .2s; margin: 20px;}
+    .review {box-shadow: 0 4px 8px 0 rgb(0, 0, 1); transition: .2s; margin: 25px;}
     .review:hover {box-shadow: 0 8px 16px 0 rgb(0, 0, 2);}
     .container {padding: 2px 16px;}
     .review p {margin-left: 340px; margin-top: -10px; color: black;}
@@ -72,8 +72,8 @@
     .dark-mode a:hover {background-color: whitesmoke;}
     .dark-mode a:hover #sitemap_universal {background-color: none;}
     .dark-mode hr {color: whitesmoke; border-color: whitesmoke;}
-    .dark-mode .card {background-color: rgb(22, 22, 22); box-shadow: 0 4px 8px 0 rgb(77, 77, 76)}
-    .dark-mode .card:hover {box-shadow: 0 8px 16px 0 rgb(77, 77, 77);}
+    .dark-mode .card {background-color: rgb(22, 22, 22); box-shadow: 0 4px 8px 0 rgb(77, 77, 74)}
+    .dark-mode .card:hover {box-shadow: 0 8px 16px 0 rgb(77, 77, 70);}
     .dark-mode .container {padding: 2px 16px}
     .dark-mode h3 {color: rgb(180, 1, 1);}
     .dark-mode .review {background-color: rgb(22, 22, 22); box-shadow: 0 4px 8px 0 rgb(77, 77, 76);}
