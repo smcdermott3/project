@@ -31,7 +31,7 @@
     .review {box-shadow: 0 4px 8px 0 rgb(0, 0, 1); transition: .2s; margin: 20px;}
     .review:hover {box-shadow: 0 8px 16px 0 rgb(0, 0, 2);}
     .container {padding: 2px 16px;}
-    .review p {margin-left: 340px; margin-top: -10px;}
+    .review p {margin-left: 340px; margin-top: -10px; color: black;}
     .review h3 {margin-left: 325px; margin-top: -300px;}
 
     .youtube {float: left; margin-top: -110px;}
@@ -50,7 +50,7 @@
 
 
     /* below is dark mode */
-    .dark-mode {background-color: rgb(0, 0, 0); color: rgb(230, 230, 230);}
+    .dark-mode {background-color: rgb(0, 0, 0); color: whitesmoke;}
     .dark-mode h1 {color: whitesmoke;}
     .dark-mode #title {color: black; background-color: rgb(180, 1, 1);}
     .dark-mode a:hover {background-color: whitesmoke;}
@@ -60,6 +60,7 @@
     .dark-mode .card:hover {box-shadow: 0 8px 16px 0 rgb(77, 77, 77);}
     .dark-mode .container {padding: 2px 16px}
     .dark-mode h3 {color: rgb(180, 1, 1);}
-    .dark-mode .review {background-color: rgb(22, 22, 22); box-shadow: 0 4px 8px 0 rgb(77, 77, 76)}
+    .dark-mode .review {background-color: rgb(22, 22, 22); box-shadow: 0 4px 8px 0 rgb(77, 77, 76);}
     .dark-mode .review:hover {box-shadow: 0 8px 16px 0 rgb(77, 77, 77);}
     .dark-mode label {color: whitesmoke;}
+    .dark-mode p {color: whitesmoke;}
