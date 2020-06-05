@@ -25,20 +25,22 @@
 
 
 
-<!-- below, sitemap -->
-<a href="project_sitemap.html" class="sitemap_universal"><img src="/images/send_plane.png" alt="send" height="18px"><button></button></a>
-<button id="sitemap_universal"><a href="project_sitemap.html" class="sitemap_universal"><img src="/images/globe.png" alt="send" height="18px"></a>
-</button>
- <!-- below, dark mode button -->
- <button id="fixedbutton" onclick="myFunction()">
-    <img src="/images/dark_mode.png" alt="DarkMode" height="25px">
-    </button>
-     <script>
-         function myFunction() {
-             var element = document.body;
-             element.classList.toggle("dark-mode");}
-     </script>
-     <!-- above, dark mode button -->
+    <div>
+        <!-- below, sitemap -->
+        <a href="project_sitemap.html" class="sitemap_universal"><img src="/images/globe.png" alt="sitemap" height="18px"><button></button></a>
+        <button id="sitemap_universal"><a href="project_sitemap.html" class="sitemap_universal"><img src="/images/globe.png" alt="send" height="18px"></a>
+        </button>
+         <!-- below, dark mode button, doesn't work on this page for some reason so I disabled it -->
+         <button id="fixedbutton" onclick="myFunction()">
+        <img src="/images/dark_mode.png" alt="DarkMode" height="25px">
+        </button>
+         <script>
+             function myFunction() {
+                 var element = document.body;
+                 element.classList.toggle("dark-mode");}
+         </script>
+         </div>
+         <!-- above, dark mode button -->
 
 
 </body>
