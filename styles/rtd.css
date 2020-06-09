@@ -136,9 +136,7 @@ nav li {
   padding: 0px;
 }
 .review:last-child iframe {
-  margin-top: auto;
-  margin-bottom: auto;
-  display: block;
+  vertical-align: middle;
 }
 
 button#sitemap_universal {
@@ -234,6 +232,14 @@ td:nth-child(6) {
 }
 tr:hover {
   background-color: whitesmoke;
+}
+
+#option {
+    text-align: center; display: block;
+}
+
+#yesnocontinue {
+    text-align: center;
 }
 
 /* below is dark mode */
