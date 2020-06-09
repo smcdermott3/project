@@ -1,87 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sitemap</title>
-    <link rel="stylesheet" type="text/css" href="/styles/rtd.css">
-</head>
+    <link rel="stylesheet" type="text/css" href="/styles/rtd.css" />
+  </head>
 
-<body>
-    <hr>
-    <h1>welcome to the <span id="title">&nbsp; SITEMAP &nbsp; </span> </h1>
- 
+  <body>
+    <hr />
+    <h1>welcome to the <span id="title">&nbsp; SITEMAP &nbsp; </span></h1>
+
     <nav>
-        <ul>
-            <li> <h4 id="sitemaplinks"><a href="index.html"> &nbsp; Home &nbsp; </a></h4> </li>
-            <li> <h4 id="sitemaplinks"><a href="song_info.html"> &nbsp; Song Data &nbsp; </a></h4> </li>
-            <li> <h4 id="sitemaplinks"><a href="NSFW.html"> &nbsp; Playlists &nbsp; </a></h4> </li>
-            <li> <h4 id="sitemaplinks"><a href="about_the_artist.html"> &nbsp; About the Artist &nbsp; </a></h4> </li>
-            <li> <h4 id="sitemaplinks"><a href="contact.html"> &nbsp; Contact &nbsp; </a></h4> </li>
-        </ul>
+      <ul>
+        <li>
+          <h4 id="sitemaplinks">
+            <a href="index.html"> &nbsp; Home &nbsp; </a>
+          </h4>
+        </li>
+        <li>
+          <h4 id="sitemaplinks">
+            <a href="song_info.html"> &nbsp; Song Data &nbsp; </a>
+          </h4>
+        </li>
+        <li>
+          <h4 id="sitemaplinks">
+            <a href="NSFW.html"> &nbsp; Playlists &nbsp; </a>
+          </h4>
+        </li>
+        <li>
+          <h4 id="sitemaplinks">
+            <a href="about_the_artist.html"> &nbsp; About the Artist &nbsp; </a>
+          </h4>
+        </li>
+        <li>
+          <h4 id="sitemaplinks">
+            <a href="contact.html"> &nbsp; Contact &nbsp; </a>
+          </h4>
+        </li>
+      </ul>
     </nav>
-<hr>
-<div class="sitemaplist">
-    <ul><h2>Song Reviews</h2>
-        <li> <h4><a href="index.html"> &nbsp; Home &nbsp; </a></h4> </li>
-        <li> <h4><a href="song_info.html"> &nbsp; Song Data &nbsp; </a></h4> </li>
-        <li> <h4><a href="about_the_artist.html"> &nbsp; About the Artist &nbsp; </a></h4> </li>
-    </ul>
-<hr id="smbreaker">
-    <ul><h2>Additional Music</h2>
-        <li> <h4><a href="playlists.html"> &nbsp; Playlists &nbsp; </a></h4> </li> 
-    </ul>
-    <hr id="smbreaker">
-    <ul><h2>About</h2>
-        <li> <h4><a href="contact.html"> &nbsp; Contact &nbsp; </a></h4> </li>
-        <li> <h4><a href="proposal.html"> &nbsp; Proposal &nbsp; </a></h4> </li>
+    <hr />
+    <div class="sitemaplist">
+      <ul>
+        <h2>Song Reviews</h2>
+        <li>
+          <h4><a href="index.html"> &nbsp; Home &nbsp; </a></h4>
+        </li>
+        <li>
+          <h4><a href="song_info.html"> &nbsp; Song Data &nbsp; </a></h4>
+        </li>
+        <li>
+          <h4>
+            <a href="about_the_artist.html"> &nbsp; About the Artist &nbsp; </a>
+          </h4>
+        </li>
+      </ul>
+      <hr id="smbreaker" />
+      <ul>
+        <h2>Additional Music</h2>
+        <li>
+          <h4><a href="playlists.html"> &nbsp; Playlists &nbsp; </a></h4>
+        </li>
+      </ul>
+      <hr id="smbreaker" />
+      <ul>
+        <h2>About</h2>
+        <li>
+          <h4><a href="contact.html"> &nbsp; Contact &nbsp; </a></h4>
+        </li>
+        <li>
+          <h4><a href="proposal.html"> &nbsp; Proposal &nbsp; </a></h4>
+        </li>
+      </ul>
+      <hr id="smbreaker" />
 
-    </ul>
-    <hr id="smbreaker">
-
-    <ul><h2>Backend</h2>
-        <li> <h4><a href="NSFW.html"> &nbsp; NSFW &nbsp; </a></h4> </li>
-        <li> <h4><a href="project_sitemap.html"> &nbsp; Sitemap &nbsp; </a></h4> </li>
-    </ul>
-</div>
-
+      <ul>
+        <h2>Backend</h2>
+        <li>
+          <h4><a href="NSFW.html"> &nbsp; NSFW &nbsp; </a></h4>
+        </li>
+        <li>
+          <h4><a href="project_sitemap.html"> &nbsp; Sitemap &nbsp; </a></h4>
+        </li>
+      </ul>
+    </div>
 
     <div>
-        <!-- below, sitemap -->
-        <button id="sitemap_universal"><a href="project_sitemap.html" class="sitemap_universal"><img src="/images/globe.png" alt="send" height="18px"></a>
-        </button>
-    <!-- below, dark mode button, doesn't work on this page for some reason so I disabled it -->
-    <button class="fixedbutton">
-        <img src="/images/dark_mode.png" alt="DarkMode" height="25px">
-        </button>
+      <!-- below, sitemap -->
+      <button id="sitemap_universal">
+        <a href="project_sitemap.html" class="sitemap_universal"
+          ><img src="/images/globe.png" alt="send" height="18px"
+        /></a>
+      </button>
+      <!-- below, dark mode button, doesn't work on this page for some reason so I disabled it -->
+      <button class="fixedbutton">
+        <img src="/images/dark_mode.png" alt="DarkMode" height="25px" />
+      </button>
 
+      <script>
+        function darkmode() {
+          let darkmode = document.querySelector(".fixedbutton");
+        }
 
-         <script>
-            
-            function darkmode() {
-              let darkmode = document.querySelector(".fixedbutton");
-            }
+        document.querySelector("fixedbutton").onclick = function () {
+          darkmode();
+        };
 
-            document.querySelector("fixedbutton").onclick = function () {
-              darkmode();
-            }
+        //  function myFunction() {
+        // let myFunction = document.getElementsByClassName("fixedbutton")
+        // document.getElementsByClassName("fixedbutton").onclick =
+        // document.classList.toggle("dark-mode");}
 
-            //  function myFunction() {
-                // let myFunction = document.getElementsByClassName("fixedbutton")
-                // document.getElementsByClassName("fixedbutton").onclick =
-                // document.classList.toggle("dark-mode");} 
+        // pseudo code
+        // 1 get the button, select the element, assign the element to variable
+        // 2 get the class dark-mode of document, assign class to a variable (and thus button)
+        // 3 toggle the variable dark-mode
 
-// pseudo code
-              // 1 get the button, select the element, assign the element to variable
-              // 2 get the class dark-mode of document, assign class to a variable (and thus button)
-              // 3 toggle the variable dark-mode       
-            
-// define myFunction as fixedbutton
-// onclick myFunction activates, toggles from the class of dark-mode
-
-         </script>
+        // define myFunction as fixedbutton
+        // onclick myFunction activates, toggles from the class of dark-mode
+      </script>
     </div>
-         <!-- above, dark mode button -->
-         <!-- a tedious solution I can do is make a dark mode html of every page and duplicate pages -->
-</body>
+    <!-- above, dark mode button -->
+    <!-- a tedious solution I can do is make a dark mode html of every page and duplicate pages -->
+  </body>
 </html>

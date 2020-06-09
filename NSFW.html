@@ -1,58 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>NSFW</title>
-    <link rel="stylesheet" type="text/css" href="/styles/rtd.css">
-</head>
+    <link rel="stylesheet" type="text/css" href="/styles/rtd.css" />
+  </head>
 
-
-<body>
-    <h1>read this <span id="title">&nbsp; WARNING &nbsp; </span> </h1>
-    <p id="yesnocontinue">The page you are about to enter contains expletives and may not be safe for work. Would you like to continue? </p>
+  <body>
+    <h1>read this <span id="title">&nbsp; WARNING &nbsp; </span></h1>
+    <p id="yesnocontinue">
+      The page you are about to enter contains expletives and may not be safe
+      for work. Would you like to continue?
+    </p>
     <h4 id="option"><a href="playlists.html"> &nbsp; YES &nbsp; </a></h4>
     <h4 id="option"><a href="project_sitemap.html"> &nbsp; NO &nbsp; </a></h4>
 
-
-
-
     <div>
-        <!-- below, sitemap -->
-        <button id="sitemap_universal"><a href="project_sitemap.html" class="sitemap_universal"><img src="/images/globe.png" alt="send" height="18px"></a>
-        </button>
-    <!-- below, dark mode button, doesn't work on this page for some reason so I disabled it -->
-    <button class="fixedbutton">
-        <img src="/images/dark_mode.png" alt="DarkMode" height="25px">
-        </button>
+      <!-- below, sitemap -->
+      <button id="sitemap_universal">
+        <a href="project_sitemap.html" class="sitemap_universal"
+          ><img src="/images/globe.png" alt="send" height="18px"
+        /></a>
+      </button>
+      <!-- below, dark mode button, doesn't work on this page for some reason so I disabled it -->
+      <button class="fixedbutton">
+        <img src="/images/dark_mode.png" alt="DarkMode" height="25px" />
+      </button>
 
+      <script>
+        function darkmode() {
+          let darkmode = document.querySelector(".fixedbutton");
+        }
 
-         <script>
-            
-            function darkmode() {
-              let darkmode = document.querySelector(".fixedbutton");
-            }
+        document.querySelector("fixedbutton").onclick = function () {
+          darkmode();
+        };
 
-            document.querySelector("fixedbutton").onclick = function () {
-              darkmode();
-            }
+        //  function myFunction() {
+        // let myFunction = document.getElementsByClassName("fixedbutton")
+        // document.getElementsByClassName("fixedbutton").onclick =
+        // document.classList.toggle("dark-mode");}
 
-            //  function myFunction() {
-                // let myFunction = document.getElementsByClassName("fixedbutton")
-                // document.getElementsByClassName("fixedbutton").onclick =
-                // document.classList.toggle("dark-mode");} 
+        // pseudo code
+        // 1 get the button, select the element, assign the element to variable
+        // 2 get the class dark-mode of document, assign class to a variable (and thus button)
+        // 3 toggle the variable dark-mode
 
-// pseudo code
-              // 1 get the button, select the element, assign the element to variable
-              // 2 get the class dark-mode of document, assign class to a variable (and thus button)
-              // 3 toggle the variable dark-mode       
-            
-// define myFunction as fixedbutton
-// onclick myFunction activates, toggles from the class of dark-mode
-
-         </script>
+        // define myFunction as fixedbutton
+        // onclick myFunction activates, toggles from the class of dark-mode
+      </script>
     </div>
-         <!-- above, dark mode button -->
-         <!-- a tedious solution I can do is make a dark mode html of every page and duplicate pages -->
-</body>
+    <!-- above, dark mode button -->
+    <!-- a tedious solution I can do is make a dark mode html of every page and duplicate pages -->
+  </body>
 </html>
