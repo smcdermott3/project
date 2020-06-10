@@ -261,6 +261,59 @@ tr:hover {
       border: lightgray solid 1px;
   }
 
+  .trivia_card {
+    box-shadow: 0 4px 8px 0 rgb(0, 0, 1);
+    transition: 0.2s;
+    margin: 10px;
+  }
+  .trivia_card:hover {
+    box-shadow: 0 8px 16px 0 rgb(0, 0, 2);
+  }
+ 
+  .trivia_card p {
+    margin-left: 220px;
+    margin-top: -10px;
+    color: black;
+  }
+  .trivia_card h3 {
+    margin-left: 220px;
+    margin-top: -200px;
+  }
+  
+  .trivia_container {
+    padding: 2px 16px;
+  }
+.trivia_card p {
+    background-color: black;
+    border-radius: 3px;
+}
+.trivia_card p:hover {
+    background-color: white;
+    transition: .2s;
+    border-radius: 3px;
+}
+
+#black_square {
+    z-index: 5;
+    width: 200px;
+    height: 200px;
+    background-color: black;
+    border-radius: 3px;
+    margin: 2px;
+}
+
+#photo_quiz {
+    z-index: 1;
+    margin-left: -212px;
+    margin-top: 12px;
+}
+
+#black_square:hover {
+    background-color: white;
+    transition: .2s;
+    border-radius: 3px;
+}
+
 /* below is dark mode */
 .dark-mode {
   background-color: rgb(0, 0, 0);
