@@ -179,29 +179,24 @@
         </button>
 
 
-         <script>
-            
-            function darkmode() {
-              let darkmode = document.querySelector(".fixedbutton");
-            }
-
-            document.querySelector("fixedbutton").onclick = function () {
-              darkmode();
-            }
-
-            //  function myFunction() {
-                // let myFunction = document.getElementsByClassName("fixedbutton")
-                // document.getElementsByClassName("fixedbutton").onclick =
-                // document.classList.toggle("dark-mode");} 
+      <script>
+       function darkMode() {
+          let darkMode= document.querySelector("fixedbutton");
+          let fixedbutton = classList("dark-mode")
+        }
+  
+        document.querySelector("fixedbutton").onclick = function() {
+          document.classList.toggle("dark-mode");
+          }
+  
+    //  function is darkMode, darkMode is associated w/ fixedbutton, 
+    // fixed button is class dark-mode, toggle  function onclick
 
 // pseudo code
               // 1 get the button, select the element, assign the element to variable
               // 2 get the class dark-mode of document, assign class to a variable (and thus button)
               // 3 toggle the variable dark-mode       
             
-// define myFunction as fixedbutton
-// onclick myFunction activates, toggles from the class of dark-mode
-
          </script>
     </div>
          <!-- above, dark mode button -->
