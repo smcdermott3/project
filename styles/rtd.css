@@ -293,8 +293,14 @@ tr:hover {
     border-radius: 3px;
 }
 
+#photo_quiz {
+    z-index: 1;
+    margin-left: -212px;
+    margin-top: 12px;
+}
+
 #black_square {
-    z-index: 5;
+    z-index: 10;
     width: 200px;
     height: 200px;
     background-color: black;
@@ -302,13 +308,8 @@ tr:hover {
     margin: 2px;
 }
 
-#photo_quiz {
-    z-index: 1;
-    margin-left: -212px;
-    margin-top: 12px;
-}
-
 #black_square:hover {
+    z-index: 5;
     background-color: white;
     transition: .2s;
     border-radius: 3px;
