@@ -315,6 +315,11 @@ tr:hover {
     border-radius: 3px;
 }
 
+::selection {
+  background-color: rgba(180, 1, 1, 0.404)
+}
+
+
 /* below is dark mode */
 .dark-mode {
   background-color: rgb(0, 0, 0);
@@ -371,4 +376,8 @@ tr:hover {
 }
 .dark-mode td {
   color: black;
+}
+
+.dark-mode ::selection {
+  background-color: rgba(180, 1, 1, 0.404);
 }
