@@ -232,6 +232,7 @@ td:nth-child(6) {
 }
 tr:hover {
   background-color: whitesmoke;
+  box-shadow: 0 0px 12px 0 black
 }
 
 #option {
