@@ -17,7 +17,7 @@
     <meta name="description" content="Steven reviews Hip-Hop music from all corners of the Americas">
     <meta name="author" content="Steven McDermott">
     <title>Home</title>
-    <link rel="stylesheet" type="text/css" href="/styles/rtd.css">
+    <link id="rtdstyle" rel="stylesheet" type="text/css" href="/styles/rtd.css">
 </head>
 <hr>
 <body>
@@ -189,12 +189,12 @@
 
 
       <script>
-       function dm () {
-        document.querySelector("p").style.color = "pink";
-      
-    }
+    function darkMode() {
+  let element = document.body;
+  element.classList.toggle("dark-mode");
+}
 
-    document.getElementsByClassName("fixedbutton").onclick = dm;
+    document.getElementsByClassName("fixedbutton").onclick = darkMode;
     
   
     //  function is darkMode, darkMode is associated w/ fixedbutton, 
