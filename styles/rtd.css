@@ -183,6 +183,27 @@ form div {
   padding: 20px;
 }
 
+#clear_form_input {
+  background-color: rgb(180, 1, 1);
+  color: white;
+  font-family: Arial;
+  font-weight: bold;
+  border: black;
+  border-radius: 5%;
+  transition: 0.5s;
+  padding: 26.5px 26px;
+  position: absolute;
+  margin-left: 5px;
+}
+#clear_form_input:hover {
+  background-color: rgb(114, 1, 1);
+  border-radius: 20%;
+}
+#pairbuttons {
+  display: inline;
+}
+
+
 table,
 th,
 td {
