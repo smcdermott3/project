@@ -190,13 +190,12 @@
 
       <script>
        function dm() {
-          let dm= document.querySelector("#fixedbutton");
-          let fixedbutton = classList("dark-mode")
-        }
-  
-        document.querySelector("#fixedbutton").onclick = function() {
-          document.classList.toggle("dark-mode");
-          }
+        document.querySelector("p").style.textDecoration = "line-Through";
+      
+    }
+
+    document.querySelector("button").onclick = dm;
+    
   
     //  function is darkMode, darkMode is associated w/ fixedbutton, 
     // fixed button is class dark-mode, toggle  function onclick
