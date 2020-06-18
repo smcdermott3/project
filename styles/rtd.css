@@ -251,6 +251,9 @@ td:nth-child(5) {
 td:nth-child(6) {
   width: 100px;
 }
+td:nth-child(7) {
+  width: 100px;
+}
 tr:hover {
   background-color: whitesmoke;
   box-shadow: 0 0px 12px 0 black
