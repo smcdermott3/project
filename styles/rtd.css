@@ -58,6 +58,11 @@ h4 a:hover {
   color: rgb(180, 1, 1);
   text-decoration: none;
 }
+p a:hover {
+  background-color: rgb(233, 233, 233);
+  color: rgb(180, 1, 1);
+  text-decoration: none;
+}
 button {
   background-color: rgb(180, 1, 1);
   color: black;
