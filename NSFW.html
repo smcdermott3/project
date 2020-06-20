@@ -31,40 +31,27 @@
 
     <div>
       <!-- below, sitemap -->
-      <button id="sitemap_universal">
-        <a href="project_sitemap.html" class="sitemap_universal"
-          ><img src="/images/globe.png" alt="send" height="18px"
-        /></a>
+      <button id="sitemap_universal"><a href="project_sitemap.html" class="sitemap_universal"><img src="/images/globe.png" alt="send" height="18px"></a>
       </button>
-      <!-- below, dark mode button, doesn't work on this page for some reason so I disabled it -->
-      <button class="fixedbutton">
-        <img src="/images/dark_mode.png" alt="DarkMode" height="25px" />
+       <!-- below, dark mode button, doesn't work on this page for some reason so I disabled it -->
+       <button class="fixedbutton" onclick="darkMode()">
+      <img src="/images/dark_mode.png" alt="DarkMode" height="25px">
       </button>
 
-      <script>
-        function darkmode() {
-          let darkmode = document.querySelector(".fixedbutton");
-        }
 
-        document.querySelector("fixedbutton").onclick = function () {
-          darkmode();
-        };
+    <script>
 
-        //  function myFunction() {
-        // let myFunction = document.getElementsByClassName("fixedbutton")
-        // document.getElementsByClassName("fixedbutton").onclick =
-        // document.classList.toggle("dark-mode");}
+// TODO: DARK MODE button
+    // Get HTML head element 
+   function darkMode() {
+       var element = document.body;
+       element.classList.toggle("dark-mode");
 
-        // pseudo code
-        // 1 get the button, select the element, assign the element to variable
-        // 2 get the class dark-mode of document, assign class to a variable (and thus button)
-        // 3 toggle the variable dark-mode
-
-        // define myFunction as fixedbutton
-        // onclick myFunction activates, toggles from the class of dark-mode
-      </script>
-    </div>
-    <!-- above, dark mode button -->
-    <!-- a tedious solution I can do is make a dark mode html of every page and duplicate pages -->
-  </body>
+    document.getElementsByClassName("fixedbutton").onclick = darkMode
+       }
+</script>
+  </div>
+       <!-- above, dark mode button -->
+       <!-- a tedious solution I can do is make a dark mode html of every page and duplicate pages -->
+         </body>
 </html>

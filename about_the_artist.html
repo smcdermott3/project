@@ -43,6 +43,8 @@
 
 <h2><span id="first_word">Information</span>&nbsp;about the <span id="last_word">artist</span></h2>
 
+<!-- Bug in which links to artist bio's are not visible here but are here if clicked -->
+
 <a href="https://genius.com/artists/Kanye-west" target="_blank"><div>
 <div class="card">
     <img src="https://i.guim.co.uk/img/media/1285d27de9db2f509cb3854ebda618ee976dc9a3/125_385_3311_1986/master/3311.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=4facf35e85aa72cd5a220e96e5850c54"
@@ -158,42 +160,30 @@
 
 
 
-
 <div>
     <!-- below, sitemap -->
     <button id="sitemap_universal"><a href="project_sitemap.html" class="sitemap_universal"><img src="/images/globe.png" alt="send" height="18px"></a>
+    </button>
      <!-- below, dark mode button, doesn't work on this page for some reason so I disabled it -->
-     <button class="fixedbutton">
-        <img src="/images/dark_mode.png" alt="DarkMode" height="25px">
-        </button>
+     <button class="fixedbutton" onclick="darkMode()">
+    <img src="/images/dark_mode.png" alt="DarkMode" height="25px">
+    </button>
 
 
-         <script>
-            
-            function darkmode() {
-              let darkmode = document.querySelector(".fixedbutton");
-            }
+  <script>
 
-            document.querySelector("fixedbutton").onclick = function () {
-              darkmode();
-            }
+// TODO: DARK MODE button
+  // Get HTML head element 
+ function darkMode() {
+     var element = document.body;
+     element.classList.toggle("dark-mode");
 
-            //  function myFunction() {
-                // let myFunction = document.getElementsByClassName("fixedbutton")
-                // document.getElementsByClassName("fixedbutton").onclick =
-                // document.classList.toggle("dark-mode");} 
-
-// pseudo code
-              // 1 get the button, select the element, assign the element to variable
-              // 2 get the class dark-mode of document, assign class to a variable (and thus button)
-              // 3 toggle the variable dark-mode       
-            
-// define myFunction as fixedbutton
-// onclick myFunction activates, toggles from the class of dark-mode
-
-         </script>
-    </div>
-         <!-- above, dark mode button -->
-         <!-- a tedious solution I can do is make a dark mode html of every page and duplicate pages -->
+  document.getElementsByClassName("fixedbutton").onclick = darkMode
+     }
+</script>
+</div>
+     <!-- above, dark mode button -->
+     <!-- a tedious solution I can do is make a dark mode html of every page and duplicate pages -->
+     
 </body>
 </html>

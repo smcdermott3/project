@@ -410,5 +410,58 @@ tr:hover {
 }
 
 .dark-mode ::selection {
-  background-color: rgba(180, 1, 1, 0.404);
+  background-color: rgba(230, 2, 2, 0.404);
+}
+.dark-mode .trivia_card {
+  background-color: rgb(22, 22, 22);
+  box-shadow: 0 4px 8px 0 rgb(77, 77, 74);
+}
+.dark-mode .trivia_card:hover {
+  box-shadow: 0 8px 16px 0 rgb(77, 77, 70);
+}
+
+.dark-mode .trivia_card p {
+  margin-left: 220px;
+  margin-top: -10px;
+  color: rgb(85, 85, 85);
+}
+.dark-mode .trivia_card h3 {
+  margin-left: 220px;
+  margin-top: -200px;
+}
+
+.dark-mode .trivia_container {
+  padding: 2px 16px;
+}
+.dark-mode .trivia_card p {
+  background-color: rgb(85, 85, 85);
+  border-radius: 3px;
+}
+.dark-mode .trivia_card p:hover {
+  background-color: rgb(22, 22, 22);
+  color: whitesmoke;
+  transition: .2s;
+  border-radius: 3px;
+}
+
+.dark-mode #photo_quiz {
+  z-index: 1;
+  margin-left: -212px;
+  margin-top: 12px;
+}
+
+.dark-mode #black_square {
+  z-index: 10;
+  width: 200px;
+  height: 200px;
+  background-color: black;
+  border-radius: 3px;
+  margin: 2px;
+}
+
+.dark-mode #black_square:hover {
+  z-index: 5;
+  background-color: red;
+  transition: .2s;
+  border-radius: 3px;
 }
