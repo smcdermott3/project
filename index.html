@@ -18,68 +18,6 @@
     <meta name="author" content="Steven McDermott">
     <title>Home</title>
     <link id="rtdstyle" rel="stylesheet" type="text/css" href="/styles/rtd.css">
-<style>
-
-/* below is dark mode */
-  .dark-mode body {
-    background-color: rgb(0, 0, 0);
-    color: whitesmoke;
-  }
-  .dark-mode h1 {
-    color: whitesmoke;
-  }
-  .dark-mode #title {
-    color: black;
-    background-color: rgb(180, 1, 1);
-  }
-  .dark-mode a:hover {
-    background-color: whitesmoke;
-  }
-  .dark-mode a:hover #sitemap_universal {
-    background-color: none;
-  }
-  .dark-mode hr {
-    color: whitesmoke;
-    border-color: whitesmoke;
-  }
-  .dark-mode  #smbreaker {
-      color: rgb(77, 77, 77);
-      border: rgb(77, 77, 77) solid 1px;
-  }
-  .dark-mode .card {
-    background-color: rgb(22, 22, 22);
-    box-shadow: 0 4px 8px 0 rgb(77, 77, 74);
-  }
-  .dark-mode .card:hover {
-    box-shadow: 0 8px 16px 0 rgb(77, 77, 70);
-  }
-  .dark-mode .container {
-    padding: 2px 16px;
-  }
-  .dark-mode h3 {
-    color: rgb(180, 1, 1);
-  }
-  .dark-mode .review {
-    background-color: rgb(22, 22, 22);
-    box-shadow: 0 4px 8px 0 rgb(77, 77, 76);
-  }
-  .dark-mode .review:hover {
-    box-shadow: 0 8px 16px 0 rgb(77, 77, 77);
-  }
-  .dark-mode label {
-    color: whitesmoke;
-  }
-  .dark-mode p {
-    color: whitesmoke;
-  }
-  .dark-mode td {
-    color: black;
-  }
-  .dark-mode ::selection {
-    background-color: rgba(180, 1, 1, 0.404);
-  }
-
-</style>
 
 </head>
 <hr>
@@ -255,24 +193,13 @@
 
 // TODO: DARK MODE button
       // Get HTML head element 
-      function darkMode() {
-  var element = document.body;
-  element.classList.toggle("dark-mode");
+     function darkMode() {
+         var element = document.body;
+         element.classList.toggle("dark-mode");
 
-
-      // set event trigger. Onclick of fixedbutton, darkMode will enable
-    document.getElementsByClassName("fixedbutton").onclick = darkMode;
-    
-  }
-    //  function is darkMode, darkMode is associated w/ fixedbutton, 
-    // fixed button is class dark-mode, toggle  function onclick
-
-// pseudo code
-              // 1 get the button, select the element, assign the element to variable
-              // 2 get the class dark-mode of document, assign class to a variable (and thus button)
-              // 3 toggle the variable dark-mode       
-            
-         </script>
+      document.getElementsByClassName("fixedbutton").onclick = darkMode
+         }
+ </script>
     </div>
          <!-- above, dark mode button -->
          <!-- a tedious solution I can do is make a dark mode html of every page and duplicate pages -->
