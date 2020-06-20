@@ -17,8 +17,424 @@
     <meta name="description" content="Steven reviews Hip-Hop music from all corners of the Americas">
     <meta name="author" content="Steven McDermott">
     <title>Home</title>
-    <link id="rtdstyle" rel="stylesheet" type="text/css" href="/styles/rtd.css">
 
+<style>
+/* This page is designed to look like the Notorious BIG's album, "Ready to Die" */
+hr {
+  border-color: black;
+}
+h1 {
+  text-align: center;
+  color: black;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#title {
+  color: rgb(180, 1, 1);
+  background-color: black;
+  font-family: Georgia;
+}
+h2 {
+  font-family: Georgia;
+  font-size: 20px;
+}
+h3 {
+  color: black;
+  font-family: Georgia;
+}
+h4 {
+  font-family: Verdana;
+  text-align: right;
+  margin-right: 60px;
+}
+
+p {
+  font-family: Verdana;
+  margin-left: 30px;
+  margin-right: 60px;
+  text-align: justify;
+}
+body {
+  margin: 40px;
+}
+#last_word {
+  color: rgb(180, 1, 1);
+  font-family: Georgia;
+  font: 1em;
+}
+#first_word {
+  letter-spacing: 3px;
+  font-family: Verdana;
+  font-size: 0.9em;
+}
+
+a {
+  color: rgb(180, 1, 1);
+  text-decoration: none;
+  padding: 3px;
+  transition: 0.5s;
+  border-radius: 3px;
+}
+h4 a:hover {
+  background-color: black;
+  color: rgb(180, 1, 1);
+  text-decoration: none;
+}
+p a:hover {
+  background-color: rgb(233, 233, 233);
+  color: rgb(180, 1, 1);
+  text-decoration: none;
+}
+button {
+  background-color: rgb(180, 1, 1);
+  color: black;
+  font-family: Georgia;
+  font-weight: bold;
+  border: black;
+  border-radius: 5%;
+  transition: 0.5s;
+}
+button:hover {
+  background-color: rgb(114, 1, 1);
+  border-radius: 20%;
+}
+.fixedbutton {
+  position: fixed;
+  bottom: 10px;
+  right: 55px;
+  padding: 5px 7px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+nav li {
+  display: inline-block;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgb(0, 0, 1);
+  transition: 0.2s;
+  margin: 10px;
+}
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgb(0, 0, 2);
+}
+.container {
+  padding: 2px 16px;
+}
+.card p {
+  margin-left: 200px;
+  margin-top: -10px;
+  color: black;
+}
+.card h3 {
+  margin-left: 200px;
+  margin-top: -200px;
+}
+
+.review {
+  box-shadow: 0 4px 8px 0 rgb(0, 0, 1);
+  transition: 0.2s;
+  margin: 10px;
+}
+.review:hover {
+  box-shadow: 0 8px 16px 0 rgb(0, 0, 2);
+}
+.container {
+  padding: 2px 16px;
+}
+.review p {
+  margin-left: 340px;
+  margin-top: -10px;
+  color: black;
+  position: relative;
+}
+.review h3 {
+  margin-left: 325px;
+  margin-top: -300px;
+}
+.review a:hover {
+  background-color: black;
+  color: rgb(180, 1, 1);
+  text-decoration: none;
+  padding: 0px;
+}
+.review:last-child iframe {
+  vertical-align: middle;
+}
+
+button#sitemap_universal {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+}
+a#sitemap_universal:hover {
+  background-color: none;
+}
+button#sitemap_universal {
+  padding-top: 9px;
+  padding-right: 8px;
+  padding-bottom: 8px;
+  padding-left: 8px;
+}
+
+#map {
+  float: right;
+  margin-top: -600px;
+  margin-right: 20px;
+}
+
+label {
+  font-family: Verdana;
+  width: 100px;
+  display: inline-block;
+}
+form div {
+  font-family: Verdana;
+  margin-top: 3px;
+}
+#typehere {
+  width: 300px;
+}
+#category label {
+    width: 265px;
+}
+
+#bigboy {
+  width: 588px;
+}
+#send_plane {
+  padding: 20px;
+}
+
+#clear_form_input {
+  background-color: rgb(180, 1, 1);
+  color: white;
+  font-family: Arial;
+  font-weight: bold;
+  border: black;
+  border-radius: 5%;
+  transition: 0.5s;
+  padding: 26.5px 26px;
+  position: absolute;
+  margin-left: 5px;
+}
+#clear_form_input:hover {
+  background-color: rgb(114, 1, 1);
+  border-radius: 20%;
+}
+#pairbuttons {
+  display: inline;
+}
+
+
+table,
+th,
+td {
+  border: black solid 2px;
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
+}
+td {
+  text-align: center;
+}
+th {
+  background-color: rgb(180, 1, 1);
+  color: whitesmoke;
+}
+caption {
+  font-family: Georgia;
+  font-size: 3em;
+}
+tr:nth-child(even) {
+  background-color: lightgrey;
+}
+tr:nth-child(odd) {
+  background-color: grey;
+}
+td:nth-child(1) {
+  text-align: left;
+  width: 200px;
+}
+td:nth-child(2) {
+  text-align: left;
+  width: 150px;
+}
+td:nth-child(3) {
+  text-align: left;
+  width: 250px;
+}
+td:nth-child(4) {
+  width: 100px;
+}
+td:nth-child(5) {
+  width: 100px;
+}
+td:nth-child(6) {
+  width: 100px;
+}
+td:nth-child(7) {
+  width: 100px;
+}
+tr:hover {
+  background-color: whitesmoke;
+  box-shadow: 0 0px 12px 0 black
+}
+
+#option {
+    text-align: center; display: block;
+}
+
+#yesnocontinue {
+    text-align: center;
+}
+
+#sitemaplinks {
+    text-align: center;
+}
+
+.sitemaplist h4 {
+    font-family: Verdana;
+    text-align: left;
+    margin-left: 40px;
+  }
+
+  .sitemaplist ul {
+      list-style-type: none;
+  }
+
+  #smbreaker {
+      color: lightgray;
+      border: lightgray solid 1px;
+  }
+
+  .trivia_card {
+    box-shadow: 0 4px 8px 0 rgb(0, 0, 1);
+    transition: 0.2s;
+    margin: 20px;
+  }
+  .trivia_card:hover {
+    box-shadow: 0 8px 16px 0 rgb(0, 0, 2);
+  }
+ 
+  .trivia_card p {
+    margin-left: 220px;
+    margin-top: -10px;
+    color: black;
+  }
+  .trivia_card h3 {
+    margin-left: 220px;
+    margin-top: -200px;
+  }
+  
+  .trivia_container {
+    padding: 2px 16px;
+  }
+.trivia_card p {
+    background-color: black;
+    border-radius: 3px;
+}
+.trivia_card p:hover {
+    background-color: white;
+    transition: .2s;
+    border-radius: 3px;
+}
+
+#photo_quiz {
+    z-index: 1;
+    margin-left: -212px;
+    margin-top: 12px;
+}
+
+#black_square {
+    z-index: 10;
+    width: 200px;
+    height: 200px;
+    background-color: black;
+    border-radius: 3px;
+    margin: 2px;
+}
+
+#black_square:hover {
+    z-index: 5;
+    background-color: red;
+    transition: .2s;
+    border-radius: 3px;
+}
+
+::selection {
+  background-color: rgba(180, 1, 1, 0.404)
+}
+
+
+/* below is dark mode */
+.dark-mode {
+  background-color: rgb(0, 0, 0);
+  color: whitesmoke;
+}
+.dark-mode h1 {
+  color: whitesmoke;
+}
+.dark-mode #title {
+  color: black;
+  background-color: rgb(180, 1, 1);
+}
+.dark-mode a:hover {
+  background-color: whitesmoke;
+}
+.dark-mode a:hover #sitemap_universal {
+  background-color: none;
+}
+.dark-mode hr {
+  color: whitesmoke;
+  border-color: whitesmoke;
+}
+
+.dark-mode  #smbreaker {
+    color: rgb(77, 77, 77);
+    border: rgb(77, 77, 77) solid 1px;
+}
+
+.dark-mode .card {
+  background-color: rgb(22, 22, 22);
+  box-shadow: 0 4px 8px 0 rgb(77, 77, 74);
+}
+.dark-mode .card:hover {
+  box-shadow: 0 8px 16px 0 rgb(77, 77, 70);
+}
+.dark-mode .container {
+  padding: 2px 16px;
+}
+.dark-mode h3 {
+  color: rgb(180, 1, 1);
+}
+.dark-mode .review {
+  background-color: rgb(22, 22, 22);
+  box-shadow: 0 4px 8px 0 rgb(77, 77, 76);
+}
+.dark-mode .review:hover {
+  box-shadow: 0 8px 16px 0 rgb(77, 77, 77);
+}
+.dark-mode label {
+  color: whitesmoke;
+}
+.dark-mode p {
+  color: whitesmoke;
+}
+.dark-mode td {
+  color: black;
+}
+
+.dark-mode ::selection {
+  background-color: rgba(180, 1, 1, 0.404);
+}
+
+</style>
 </head>
 <hr>
 <body>
