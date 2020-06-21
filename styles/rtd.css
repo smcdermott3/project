@@ -179,7 +179,7 @@ form div {
   width: 300px;
 }
 #category label {
-    width: 265px;
+  width: 265px;
 }
 
 #bigboy {
@@ -208,7 +208,6 @@ form div {
 #pairbuttons {
   display: inline;
 }
-
 
 table,
 th,
@@ -262,94 +261,110 @@ td:nth-child(7) {
 }
 tr:hover {
   background-color: whitesmoke;
-  box-shadow: 0 0px 12px 0 black
+  box-shadow: 0 0px 12px 0 black;
 }
 
 #option {
-    text-align: center; display: block;
+  text-align: center;
+  display: block;
 }
 
 #yesnocontinue {
-    text-align: center;
+  text-align: center;
 }
 
 #sitemaplinks {
-    text-align: center;
+  text-align: center;
 }
 
 .sitemaplist h4 {
-    font-family: Verdana;
-    text-align: left;
-    margin-left: 40px;
-  }
+  font-family: Verdana;
+  text-align: left;
+  margin-left: 40px;
+}
 
-  .sitemaplist ul {
-      list-style-type: none;
-  }
+.sitemaplist ul {
+  list-style-type: none;
+}
 
-  #smbreaker {
-      color: lightgray;
-      border: lightgray solid 1px;
-  }
+#smbreaker {
+  color: lightgray;
+  border: lightgray solid 1px;
+}
 
-  .trivia_card {
-    box-shadow: 0 4px 8px 0 rgb(0, 0, 1);
-    transition: 0.2s;
-    margin: 20px;
-  }
-  .trivia_card:hover {
-    box-shadow: 0 8px 16px 0 rgb(0, 0, 2);
-  }
- 
-  .trivia_card p {
-    margin-left: 220px;
-    margin-top: -10px;
-    color: black;
-  }
-  .trivia_card h3 {
-    margin-left: 220px;
-    margin-top: -200px;
-  }
-  
-  .trivia_container {
-    padding: 2px 16px;
-  }
+.trivia_card {
+  box-shadow: 0 4px 8px 0 rgb(0, 0, 1);
+  transition: 0.2s;
+  margin: 20px;
+}
+.trivia_card:hover {
+  box-shadow: 0 8px 16px 0 rgb(0, 0, 2);
+}
+
 .trivia_card p {
-    background-color: black;
-    border-radius: 3px;
+  margin-left: 220px;
+  margin-top: -10px;
+  color: black;
+}
+.trivia_card h3 {
+  margin-left: 220px;
+  margin-top: -200px;
+}
+
+.trivia_container {
+  padding: 2px 16px;
+}
+.trivia_card p {
+  background-color: black;
+  border-radius: 3px;
 }
 .trivia_card p:hover {
-    background-color: white;
-    transition: .2s;
-    border-radius: 3px;
+  background-color: white;
+  transition: 0.2s;
+  border-radius: 3px;
 }
 
 #photo_quiz {
-    z-index: 1;
-    margin-left: -212px;
-    margin-top: 12px;
+  z-index: 1;
+  margin-left: -212px;
+  margin-top: 12px;
 }
 
 #black_square {
-    z-index: 10;
-    width: 200px;
-    height: 200px;
-    background-color: black;
-    border-radius: 3px;
-    margin: 2px;
+  z-index: 10;
+  width: 200px;
+  height: 200px;
+  background-color: black;
+  border-radius: 3px;
+  margin: 2px;
 }
 
 #black_square:hover {
-    z-index: 5;
-    background-color: red;
-    transition: .2s;
-    border-radius: 3px;
+  z-index: 5;
+  background-color: red;
+  transition: 0.2s;
+  border-radius: 3px;
 }
 
 ::selection {
-  background-color: rgba(180, 1, 1, 0.404)
+  background-color: rgba(180, 1, 1, 0.404);
 }
 
+#fbi-to-nwa {
+  width: 200px;
+  float: right;
+  border-width: 5px;
+  border-color: whitesmoke;
+  border-style: solid;
+  margin-top: -10px;
+  margin-right: 60px;
+  margin-left: 10px;
+}
+
+#link-fbi-to-nwa {
+  float: right;
+  padding: 0px;
+}
 
 /* below is dark mode */
 .dark-mode {
@@ -374,9 +389,9 @@ tr:hover {
   border-color: whitesmoke;
 }
 
-.dark-mode  #smbreaker {
-    color: rgb(77, 77, 77);
-    border: rgb(77, 77, 77) solid 1px;
+.dark-mode #smbreaker {
+  color: rgb(77, 77, 77);
+  border: rgb(77, 77, 77) solid 1px;
 }
 
 .dark-mode .card {
@@ -440,7 +455,7 @@ tr:hover {
 .dark-mode .trivia_card p:hover {
   background-color: rgb(22, 22, 22);
   color: whitesmoke;
-  transition: .2s;
+  transition: 0.2s;
   border-radius: 3px;
 }
 
@@ -462,6 +477,6 @@ tr:hover {
 .dark-mode #black_square:hover {
   z-index: 5;
   background-color: red;
-  transition: .2s;
+  transition: 0.2s;
   border-radius: 3px;
 }
