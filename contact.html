@@ -225,10 +225,37 @@ document.getElementsByClassName("fixedbutton").onclick = darkMode
     // validate the inputs
         if (lastName.length === 0 || firstName.length === 0) {
           alert("Enter name")
-        }    
+        }  
+        document.querySelector(".submit").onclick = display   
         }
+    
         
-    document.querySelector(".submit").onclick = display 
+
+
+        function magnify() {
+          let myMap = document.getElementById("map");
+          let w = myMap.width;
+          w = w * 1.5;
+          myMap.width = w;
+
+        }
+  
+        function shrink() {
+          let myMap = document.getElementById("map");
+          let w = myMap.width;
+          w = w / 1.5;
+          myMap.width = w;
+        }
+  
+        document.getElementById("map").onmouseover = function() {
+            magnify("map");
+        }; 
+
+        document.getElementById("map").onmouseout = function() {
+            shrink("map");
+        } ;
+
+
 </script>
 </div>
    <!-- above, dark mode button -->
