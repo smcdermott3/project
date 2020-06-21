@@ -393,6 +393,24 @@ a #drake-link {
   float: right;
   padding: 0px;
 }
+#credit_links {
+  text-align: center;
+}
+
+.credit_list h4 {
+  font-family: Verdana;
+  text-align: left;
+  margin-left: 40px;
+}
+
+.credit_list ul {
+  list-style-type: none;
+}
+.credit_list a:hover {
+  background-color: black;
+  color: rgb(180, 1, 1);
+  text-decoration: none;
+}
 
 /* below is dark mode */
 .dark-mode {
