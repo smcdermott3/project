@@ -271,7 +271,7 @@ tr:hover {
 #option_meme {
   text-align: center;
   display: block;
-  font-size: 8pt;
+  font-size: 6pt;
 }
 
 #yesnocontinue {
@@ -417,9 +417,11 @@ a #drake-link {
   text-decoration: none;
 }
 #bee_movie {
+  display: block;
   margin-left: auto;
   margin-right: auto;
   width: 1500px;
+  display: none;
 }
 
 /* below is dark mode */
