@@ -231,7 +231,7 @@ document.getElementsByClassName("fixedbutton").onclick = darkMode
     
         
 
-
+// magnify map, get element and increase width by 1.5
         function magnify() {
           let myMap = document.getElementById("map");
           let w = myMap.width;
@@ -240,6 +240,7 @@ document.getElementsByClassName("fixedbutton").onclick = darkMode
 
         }
   
+// shrink map, get element and decrease width by 1.5
         function shrink() {
           let myMap = document.getElementById("map");
           let w = myMap.width;
@@ -247,6 +248,7 @@ document.getElementsByClassName("fixedbutton").onclick = darkMode
           myMap.width = w;
         }
   
+// execute function with onmouseover, onmouseout
         document.getElementById("map").onmouseover = function() {
             magnify("map");
         }; 
