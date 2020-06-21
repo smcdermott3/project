@@ -30,7 +30,7 @@
     <h4 id="option"><a href="project_sitemap.html"> &nbsp; NO &nbsp; </a></h4>
     <br>
     <p id="option_meme">&nbsp; NO, BUT YOU CAN CLICK ON ME &nbsp;</p>
-
+    <img id="bee_movie" src="images/bee_movie.jpg" alt="bee_movie_script" title="Bee Movie Script">
 
     <div>
       <!-- below, sitemap -->
@@ -55,8 +55,8 @@
 
       function meme () {
       let smalltext = document.querySelector("#option_meme")
-      smalltext.innerText = "Why did you just take instructions from some random text?";
-    }
+      smalltext.innerHTML = "images/bee_movie.jpg"
+    ;}
         document.querySelector("#option_meme").onclick = meme;
 </script>
   </div>

@@ -416,7 +416,11 @@ a #drake-link {
   color: rgb(180, 1, 1);
   text-decoration: none;
 }
-
+#bee_movie {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1500px;
+}
 
 /* below is dark mode */
 .dark-mode {
