@@ -74,9 +74,9 @@
         <label for="fname">First Name:</label>
         <input
           id="typehere"
-          type="lname"
+          type="fname"
           ;
-          name="lname"
+          name="fname"
           ;
           placeholder="First name"
         />
@@ -85,9 +85,9 @@
         <label for="email">Email:</label>
         <input
           id="typehere"
-          type="lname"
+          type="email"
           ;
-          name="lname"
+          name="email"
           ;
           placeholder="Email Address"
         />
@@ -160,7 +160,7 @@
 
 <div id="pairbuttons">
       <button id="send_plane">
-        <a href="mailto:smcdermott3@babson.edu" class="Submit"
+        <a href="mailto:smcdermott3@babson.edu" class="submit"
           ><img src="/images/send_plane.png" alt="submit" height="25px"
         /></a>
       </button>
@@ -206,6 +206,25 @@ function darkMode() {
 
 document.getElementsByClassName("fixedbutton").onclick = darkMode
    }
+
+
+
+
+
+   function display() {
+    // get input values from variables
+        const myForm = document.querySelector("form");
+        const lastName = myForm["lname"].value;
+        const firstName = myForm["fname"].value;
+        
+
+    // validate the inputs
+        if (lastName.length === 0 || firstName.length === 0) {
+          alert("Enter name")
+        }    
+        }
+        
+    document.querySelector(".submit").onclick = display 
 </script>
 </div>
    <!-- above, dark mode button -->
