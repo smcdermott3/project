@@ -268,6 +268,11 @@ tr:hover {
   text-align: center;
   display: block;
 }
+#option_meme {
+  text-align: center;
+  display: block;
+  font-size: 8pt;
+}
 
 #yesnocontinue {
   text-align: center;
@@ -411,6 +416,7 @@ a #drake-link {
   color: rgb(180, 1, 1);
   text-decoration: none;
 }
+
 
 /* below is dark mode */
 .dark-mode {
