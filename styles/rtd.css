@@ -142,7 +142,6 @@ nav li {
   margin-bottom: auto;
 }
 
-
 button#sitemap_universal {
   position: fixed;
   bottom: 10px;
@@ -390,7 +389,6 @@ a #drake-link {
   background-color: none;
 }
 
-
 .dark-mode hr {
   color: whitesmoke;
   border-color: whitesmoke;
@@ -435,4 +433,3 @@ a #drake-link {
 .dark-mode ::selection {
   background-color: rgba(230, 2, 2, 0.404);
 }
-
