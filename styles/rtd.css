@@ -261,8 +261,6 @@ tr:hover {
   background-color: whitesmoke;
   box-shadow: 0 0px 12px 0 black;
 }
-
-
 #option {
   text-align: center;
   display: block;
@@ -430,7 +428,10 @@ a #drake-link {
 .dark-mode td {
   color: black;
 }
-
+.dark-mode tr:hover {
+  background-color: whitesmoke;
+  box-shadow: 0 0px 12px 0 whitesmoke;
+}
 .dark-mode ::selection {
   background-color: rgba(230, 2, 2, 0.404);
 }
