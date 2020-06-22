@@ -59,7 +59,7 @@ h4 a:hover {
   text-decoration: none;
 }
 p a:hover {
-  background-color: rgb(233, 233, 233);
+  background-color: rgb(0, 0, 0);
   color: rgb(180, 1, 1);
   text-decoration: none;
 }
@@ -135,15 +135,13 @@ nav li {
   margin-left: 325px;
   margin-top: -300px;
 }
-.review a:hover {
-  background-color: black;
-  color: rgb(180, 1, 1);
-  text-decoration: none;
-  padding: 0px;
-}
+
 .review:last-child iframe {
-  vertical-align: middle;
+  display: block;
+  margin-top: auto;
+  margin-bottom: auto;
 }
+
 
 button#sitemap_universal {
   position: fixed;
@@ -298,60 +296,6 @@ tr:hover {
   border: lightgray solid 1px;
 }
 
-.trivia_card {
-  box-shadow: 0 4px 8px 0 rgb(0, 0, 1);
-  transition: 0.2s;
-  margin: 20px;
-}
-.trivia_card:hover {
-  box-shadow: 0 8px 16px 0 rgb(0, 0, 2);
-}
-
-.trivia_card p {
-  margin-left: 220px;
-  margin-top: -10px;
-  color: black;
-}
-.trivia_card h3 {
-  margin-left: 220px;
-  margin-top: -200px;
-}
-
-.trivia_container {
-  padding: 2px 16px;
-}
-.trivia_card p {
-  background-color: black;
-  border-radius: 3px;
-}
-.trivia_card p:hover {
-  background-color: white;
-  transition: 0.2s;
-  border-radius: 3px;
-}
-
-#photo_quiz {
-  z-index: -100;
-  margin-left: -212px;
-  margin-top: 12px;
-}
-
-#black_square {
-  z-index: 100;
-  width: 200px;
-  height: 200px;
-  background-color: black;
-  border-radius: 3px;
-  margin: 2px;
-}
-
-#black_square:hover {
-  z-index: 100;
-  background-color: red;
-  transition: 0.2s;
-  border-radius: 3px;
-}
-
 ::selection {
   background-color: rgba(180, 1, 1, 0.404);
 }
@@ -440,19 +384,23 @@ a #drake-link {
 .dark-mode a:hover {
   background-color: whitesmoke;
 }
+/* hovering over link still turns white even when told not to */
+.dark-mode .youtube a:hover {
+  background-color: none;
+}
 .dark-mode a:hover #sitemap_universal {
   background-color: none;
 }
+
+
 .dark-mode hr {
   color: whitesmoke;
   border-color: whitesmoke;
 }
-
 .dark-mode #smbreaker {
   color: rgb(77, 77, 77);
   border: rgb(77, 77, 77) solid 1px;
 }
-
 .dark-mode .card {
   background-color: rgb(22, 22, 22);
   box-shadow: 0 4px 8px 0 rgb(77, 77, 74);
@@ -486,56 +434,4 @@ a #drake-link {
 .dark-mode ::selection {
   background-color: rgba(230, 2, 2, 0.404);
 }
-.dark-mode .trivia_card {
-  background-color: rgb(22, 22, 22);
-  box-shadow: 0 4px 8px 0 rgb(77, 77, 74);
-}
-.dark-mode .trivia_card:hover {
-  box-shadow: 0 8px 16px 0 rgb(77, 77, 70);
-}
 
-.dark-mode .trivia_card p {
-  margin-left: 220px;
-  margin-top: -10px;
-  color: rgb(85, 85, 85);
-}
-.dark-mode .trivia_card h3 {
-  margin-left: 220px;
-  margin-top: -200px;
-}
-
-.dark-mode .trivia_container {
-  padding: 2px 16px;
-}
-.dark-mode .trivia_card p {
-  background-color: rgb(85, 85, 85);
-  border-radius: 3px;
-}
-.dark-mode .trivia_card p:hover {
-  background-color: rgb(22, 22, 22);
-  color: whitesmoke;
-  transition: 0.2s;
-  border-radius: 3px;
-}
-
-.dark-mode #photo_quiz {
-  z-index: 1;
-  margin-left: -212px;
-  margin-top: 12px;
-}
-
-.dark-mode #black_square {
-  z-index: 10;
-  width: 200px;
-  height: 200px;
-  background-color: black;
-  border-radius: 3px;
-  margin: 2px;
-}
-
-.dark-mode #black_square:hover {
-  z-index: 5;
-  background-color: red;
-  transition: 0.2s;
-  border-radius: 3px;
-}
