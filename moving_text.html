@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scrolling Text</title>
+    <style>
+      h1 {
+        text-align: center;
+      }
+      #lyrics {
+        position: absolute;
+        color: whitesmoke;
+        font-family: Arial;
+      }
+      div {
+        position: relative;
+        border: 1px solid black;
+        height: 50px;
+        margin-left: 100px;
+        margin-right: 100px;
+        background-color: rgb(180, 1, 1);
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>More Hip-Hop Facts:</h1>
+    <div>
+      <h3 id="lyrics">This text will move</h3>
+    </div>
+
+
+    <script>
+      const msgList = [
+        "This website was styled after Biggie Smalls' album, 'Ready to Die.'",
+        "Run-DMC and Aerosmith broke genres by collabing on a song.",
+        "Eminem is Hip-Hop's best selling artist by albums sold.",
+        "Kanye West started out as a producer, only then moving to rap.",
+        "Snoop Dogg originates from Long Beach, CA.",
+        "2Pac repped the West until he died, but was born in NY.",
+        "Nas and Jay-Z are regarded by some to have the most intense beef in Hip-Hop history.",
+        "Record label, TDE, houses the rap juggernaut Kendrick Lamar.",
+        "Jay-Z has the most Grammy's for a rapper, totaling 22.",
+        "'La Di Da Di' is one of the most sampled songs in history.",
+      ];
+      const lyrics = document.getElementById("lyrics");
+      let p = 5;
+      let i = 0;
+
+      function move() {
+        lyrics.innerHTML = msgList[i];
+        lyrics.style.left = p + "px";
+        if (p > document.querySelector('div').clientWidth - 350) {
+          p = 5;
+          i++;
+          if (i === msgList.length) {
+            i = 0;
+          }
+        } else {
+          p = p + 5;
+        }
+        setTimeout(move, 50);
+      }
+
+      // document.addEventListener("DOMContentLoaded", move);
+      document.querySelector("body").onload = move;
+    </script>
+  </body>
+</html>
