@@ -3,68 +3,64 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Scrolling Text</title>
+    <title>Moving Text</title>
+    <link id="rtdstyle" rel="stylesheet" type="text/css" href="/styles/rtd.css">
+
     <style>
-      h1 {
-        text-align: center;
-      }
-      #lyrics {
-        position: absolute;
-        color: whitesmoke;
-        font-family: Arial;
-      }
-      div {
-        position: relative;
-        border: 1px solid black;
-        height: 50px;
-        margin-left: 100px;
-        margin-right: 100px;
-        background-color: rgb(180, 1, 1);
-      }
+     
     </style>
   </head>
 
   <body>
     <h1>More Hip-Hop Facts:</h1>
-    <div>
-      <h3 id="lyrics">This text will move</h3>
+    <div id="moving_text_container">
+      <p id="moving_text"></p>
     </div>
 
 
     <script>
-      const msgList = [
+      const textList = [
         "This website was styled after Biggie Smalls' album, 'Ready to Die.'",
-        "Run-DMC and Aerosmith broke genres by collabing on a song.",
         "Eminem is Hip-Hop's best selling artist by albums sold.",
         "Kanye West started out as a producer, only then moving to rap.",
-        "Snoop Dogg originates from Long Beach, CA.",
+        "Snoop Dogg hails from Long Beach, CA.",
         "2Pac repped the West until he died, but was born in NY.",
-        "Nas and Jay-Z are regarded by some to have the most intense beef in Hip-Hop history.",
+        "Jay-Z's diss song about Nas was so bad his mom made him apologize. ",
         "Record label, TDE, houses the rap juggernaut Kendrick Lamar.",
         "Jay-Z has the most Grammy's for a rapper, totaling 22.",
         "'La Di Da Di' is one of the most sampled songs in history.",
+        "50 Cent still has a bullet fragment in his tongue.",
+        "Wu-Tang's 'C.R.E.A.M.'' stands for Cash Rules Everything Around Me.",
+        "Producer Kenny Beats used to be an EDM DJ in the group LOUDPVCK.",
+        "21 Savage was born in London and overstayed his visa in the U.S.",
+        "'A$AP' in A$AP Mob stands for 'Always Strive And Prosper'.",
+        "Rick Ross used to be a correctional officer in Florida.",
       ];
-      const lyrics = document.getElementById("lyrics");
-      let p = 5;
-      let i = 0;
+      const fax = document.getElementById("moving_text");
+      let p = 100; // determine the starting position of text
+      let i = 0; // start array at 0
+     
+     
+
 
       function move() {
-        lyrics.innerHTML = msgList[i];
-        lyrics.style.left = p + "px";
-        if (p > document.querySelector('div').clientWidth - 350) {
-          p = 5;
+        fax.innerHTML = textList[i];
+        fax.style.left = p + "px";
+        if (p > document.getElementById('moving_text_container').clientWidth - 750) {
+                    // ^ number is the cut-off point
+          p =100; // this is the consecutive starting position
           i++;
-          if (i === msgList.length) {
+          if (i === textList.length) {
             i = 0;
           }
         } else {
-          p = p + 5;
+          p = p + 2; // determines smoothness, px to move 
         }
-        setTimeout(move, 50);
+        setTimeout(move, 20); // the number determines speed, higher it is, slow it moves
       }
 
-      // document.addEventListener("DOMContentLoaded", move);
       document.querySelector("body").onload = move;
+      // onload of body, execute function "move"
     </script>
   </body>
 </html>
