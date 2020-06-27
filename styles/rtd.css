@@ -301,7 +301,7 @@ tr:hover {
   width: 200px;
   float: right;
   border-width: 2px;
-  border-color: whitesmoke;
+  border-color: black;
   border-style: solid;
   margin-top: -20px;
   margin-left: 10px;
@@ -315,7 +315,7 @@ a #link-fbi-to-nwa {
   width: 200px;
   float: right;
   border-width: 2px;
-  border-color: whitesmoke;
+  border-color: black;
   border-style: solid;
   margin-top: -20px;
   margin-left: 10px;
@@ -325,11 +325,10 @@ a #djkh-link {
   padding: 0px;
 }
 #drake {
-  
   height: 120px;
   float: right;
   border-width: 2px;
-  border-color: whitesmoke;
+  border-color: black;
   border-style: solid;
   margin-top: 0px;
   margin-left: 10px;
@@ -450,4 +449,19 @@ a #drake-link {
 }
 .dark-mode ::selection {
   background-color: rgba(230, 2, 2, 0.404);
+}
+.dark-mode #drake {
+  border-color: whitesmoke;
+}
+.dark-mode #djkh {
+  border-color: whitesmoke;
+}
+.dark-mode #fbi-to-nwa {
+  border-color: whitesmoke;
+}
+.dark-mode #moving_text_container {
+  border: 1px solid whitesmoke;
+}
+.dark-mode #moving_text {
+  color: black;
 }
