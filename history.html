@@ -98,7 +98,9 @@
     <h2>
       <span id="first_word">The</span> origins of
       <span id="last_word"> Hip-Hop.</span>
-      <a id="djkh-link" href="https://en.wikipedia.org/wiki/DJ_Kool_Herc">
+     
+    </h2>
+    <p> <a id="djkh-link" href="https://en.wikipedia.org/wiki/DJ_Kool_Herc">
         <img
           id="djkh"
           src="images/dj_kool_herc.jpg"
@@ -106,8 +108,6 @@
           title="DJ Kool Herc in 2006"
         />
       </a>
-    </h2>
-    <p>
       A faint thud of the bass emanated from the apartment of DJ Kool Herc in
       the Bronx during one of his parties. Little did he know, he had just
       started a movement: Hip-Hop. His experimentalism with sampling and
@@ -141,7 +141,8 @@
       <span id="first_word">West Coast</span> begins to
       <span id="last_word"> emerge.</span>
     </h2>
-    <a
+   
+    <p> <a
       id="link-fbi-to-nwa"
       href="https://www.newseum.org/exhibits_rockhall_nwa/"
     >
@@ -152,7 +153,6 @@
         title="Letter from the FBI to NWA"
       />
     </a>
-    <p>
       It took some time for Hip-Hop to jump coasts to Los Angeles, but when it
       did, the artists did more than run with it. A gritty realism emerged that
       truly dove into the social and political issues of the day. Most famous
@@ -206,18 +206,14 @@
       <span id="first_word">Where</span> the sounds is
       <span id="last_word"> at.</span>
     </h2>
-    <a
-      id="drake-link"
-      href="https://variety.com/2020/music/news/drake-drops-two-new-songs-when-to-say-when-chicago-freestyle-watch-video-1203520189/"
-    >
+   
+    <p> 
       <img
         id="drake"
         src="images/drake6.jpg"
-        alt="Drake performing"
-        title="Drake Performing"
+        alt="Hip-Hop Slideshow"
+        title="Hip-hop Slideshow"
       />
-    </a>
-    <p>
       Hip-Hop, being a young genre geared towards the youth, was quick to adapt
       to the coming of the Internet. People in New York were exposed to Houston,
       who were exposed to Atlanta, who were exposed to LA. Sounds are beginning
@@ -310,11 +306,42 @@
           setTimeout(move, 20); // the number determines speed, higher it is, slow it moves
         }
 
-        document.querySelector("body").onload = move;
+        document.querySelector("img").onload = move;
         // onload of body, execute function "move"
+
+
+
+
+// below is slideshow
+
+        const slides = [
+        "images/drake6.jpg",   
+        "images/action_bronson.jpg",
+        "images/lilbaby.jpg",
+        "images/kendrick_lamar.jpg",
+        "images/tydollar.jpg",
+        "images/danileigh.jpg",
+      ];
+      let s = 0;
+
+      const image = document.getElementById("drake");
+
+      function slideShow() {
+        if (s === slides.length) {
+          s = 0;
+        }
+        image.src = slides[s];
+
+        s = s + 1;
+
+        setTimeout(slideShow, 3000);
+      }
+
+      document.querySelector("body").onload = slideShow;
+
+
+
       </script>
     </div>
-    <!-- above, dark mode button -->
-    <!-- a tedious solution I can do is make a dark mode html of every page and duplicate pages -->
   </body>
 </html>

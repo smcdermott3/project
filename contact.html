@@ -46,13 +46,15 @@
     <hr />
 
     <h2><span id="first_word">Who</span> am <span id="last_word"> I?</span></h2>
-    <p>
+    <p> <img id="me"
+    src="images/headshot.jpg" alt="Me!">
       My name is Steven and, as you can guess, I'm using this website to review
       music. I am an avid Hip-Hop listener and enjoy many sub-genres. My ratings
       are, of course, subjective, but I try my best to inject objectivity into
       the reviews. For many, music is an emotional venture and it is no
       different with me. So, while I try to be objective, I can't always.
     </p>
+   
     <hr />
 
     <h2>
@@ -266,6 +268,22 @@ document.getElementsByClassName("fixedbutton").onclick = darkMode
         } ;
 
 
+// changing images
+function meImage() {
+        let headshotImage = document.querySelector("img");
+        headshotImage.src = "images/boulderme.jpeg";
+       
+      }
+
+      document.querySelector("img").onmouseover = meImage;
+
+function meImageReverse() {
+      let headshotImage = document.querySelector("img");
+      headshotImage.src = "images/headshot.jpg";
+       
+      }
+
+      document.querySelector("img").onmouseout = meImageReverse;
 </script>
 </div>
    <!-- above, dark mode button -->
