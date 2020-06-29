@@ -398,7 +398,7 @@ a #drake-link {
 .dark-mode a:hover {
   background-color: whitesmoke;
 }
-/* hovering over link still turns white even when told not to */
+/* bug: hovering over link still turns white even when told not to */
 .dark-mode .youtube a:hover {
   background-color: none;
 }
@@ -463,5 +463,5 @@ a #drake-link {
   border: 1px solid whitesmoke;
 }
 .dark-mode #moving_text {
-  color: black;
+  color: whitesmoke;
 }
