@@ -230,11 +230,13 @@ document.getElementsByClassName("fixedbutton").onclick = darkMode
         const myForm = document.querySelector("form");
         const lastName = myForm["lname"].value;
         const firstName = myForm["fname"].value;
+        const eMail = myForm["typehere"].value;
+        const bigBoy = myForm["bigboy"].value;
         
 
     // validate the inputs
-        if (lastName.length === 0 || firstName.length === 0) {
-          alert("Enter name")
+        if (lastName.length === 0 || firstName.length === 0 || bigBoy.length === 0 || eMail.length === 0) {
+          alert("Please enter name, email, and comment")
         }  
         document.querySelector(".submit").onclick = display   
         }
