@@ -2,72 +2,110 @@
 <html lang="en">
   <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-169811441-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-169811441-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-  gtag('config', 'UA-169811441-1');
-</script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="Hip-Hop, Rap, Kanye West, Kendrick Lamar, Review, Music,
+      gtag("config", "UA-169811441-1");
+    </script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="keywords"
+      content="Hip-Hop, Rap, Kanye West, Kendrick Lamar, Review, Music,
     YG, Lyric, Lyrics, Song, Songs, 10, Score, Rating, Data, Hip-Hop, R&B, 
-    6, 7, 8, 9, 10, Pop Smoke, Tory Lanez, Freddie Gibbs, 2Pac">
-    <meta name="description" content="Steven reviews Hip-Hop music from all corners of the Americas">
-    <meta name="author" content="Steven McDermott">
-        <title>NSFW</title>
+    6, 7, 8, 9, 10, Pop Smoke, Tory Lanez, Freddie Gibbs, 2Pac"
+    />
+    <meta
+      name="description"
+      content="Steven reviews Hip-Hop music from all corners of the Americas"
+    />
+    <meta name="author" content="Steven McDermott" />
+    <title>NSFW</title>
     <link rel="stylesheet" type="text/css" href="/styles/rtd.css" />
-    <link id="rtdstyle" rel="stylesheet" type="text/css" href="/styles/rtd.css">
-    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
-    <link rel="manifest" href="images/site.webmanifest">
+    <link
+      id="rtdstyle"
+      rel="stylesheet"
+      type="text/css"
+      href="/styles/rtd.css"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="images/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="images/favicon-16x16.png"
+    />
+    <link rel="manifest" href="images/site.webmanifest" />
   </head>
 
   <body>
     <h1>read this <span id="title">&nbsp; WARNING &nbsp; </span></h1>
     <p id="yesnocontinue">
-      The page you are about to enter contains music with expletives and may not be safe
-      for work. Would you like to continue?
+      The page you are about to enter contains music with expletives and may not
+      be safe for work. Would you like to continue?
     </p>
     <h4 id="option"><a href="playlists.html"> &nbsp; YES &nbsp; </a></h4>
     <h4 id="option"><a href="project_sitemap.html"> &nbsp; NO &nbsp; </a></h4>
-    <br>
-    <p id="option_meme"> No, but if you click this the Bee Movie script will appear.</p>
-    <img id="bee_movie" src="images/bee_movie.jpg" alt="bee_movie_script" title="Bee Movie Script">
+    <br />
+    <p id="option_meme">
+      No, but if you click this the Bee Movie script will appear.
+    </p>
+    <img
+      id="bee_movie"
+      src="images/bee_movie.jpg"
+      alt="bee_movie_script"
+      title="Bee Movie Script"
+    />
 
     <div>
       <!-- below, sitemap -->
-      <button id="sitemap_universal"><a href="project_sitemap.html" class="sitemap_universal"><img src="/images/globe.png" alt="send" height="18px"></a>
+      <button id="sitemap_universal">
+        <a href="project_sitemap.html" class="sitemap_universal"
+          ><img src="/images/globe.png" alt="send" height="18px"
+        /></a>
       </button>
-       <!-- below, dark mode button, doesn't work on this page for some reason so I disabled it -->
-       <button class="fixedbutton" onclick="darkMode()">
-      <img src="/images/dark_mode.png" alt="DarkMode" height="25px">
+      <!-- below, dark mode button, doesn't work on this page for some reason so I disabled it -->
+      <button class="fixedbutton" onclick="darkMode()">
+        <img src="/images/dark_mode.png" alt="DarkMode" height="25px" />
       </button>
 
+      <script>
+        // TODO: DARK MODE button
+        // Get HTML head element
+        function darkMode() {
+          var element = document.body;
+          element.classList.toggle("dark-mode");
 
-    <script>
+          document.getElementsByClassName("fixedbutton").onclick = darkMode;
+        }
 
-// TODO: DARK MODE button
-    // Get HTML head element 
-   function darkMode() {
-       var element = document.body;
-       element.classList.toggle("dark-mode");
-
-    document.getElementsByClassName("fixedbutton").onclick = darkMode
-       }
-
-      function meme () {
-      let smalltext = document.querySelector("#option_meme")
-      smalltext.innerHTML = "Ya like Jazz?";
-      document.getElementById('bee_movie').style.display='block';
-    }
+        function meme() {
+          let smalltext = document.querySelector("#option_meme");
+          smalltext.innerHTML = "Ya like Jazz?";
+          document.getElementById("bee_movie").style.display = "block";
+        }
         document.querySelector("#option_meme").onclick = meme;
-</script>
-  </div>
-       <!-- above, dark mode button -->
-       <!-- a tedious solution I can do is make a dark mode html of every page and duplicate pages -->
-         </body>
+      </script>
+    </div>
+    <!-- above, dark mode button -->
+    <!-- a tedious solution I can do is make a dark mode html of every page and duplicate pages -->
+  </body>
 </html>

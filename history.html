@@ -98,9 +98,9 @@
     <h2>
       <span id="first_word">The</span> origins of
       <span id="last_word"> Hip-Hop.</span>
-     
     </h2>
-    <p> <a id="djkh-link" href="https://en.wikipedia.org/wiki/DJ_Kool_Herc">
+    <p>
+      <a id="djkh-link" href="https://en.wikipedia.org/wiki/DJ_Kool_Herc">
         <img
           id="djkh"
           src="images/dj_kool_herc.jpg"
@@ -141,18 +141,19 @@
       <span id="first_word">West Coast</span> begins to
       <span id="last_word"> emerge.</span>
     </h2>
-   
-    <p> <a
-      id="link-fbi-to-nwa"
-      href="https://www.newseum.org/exhibits_rockhall_nwa/"
-    >
-      <img
-        id="fbi-to-nwa"
-        src="images/fbi_nwa.jpg"
-        alt="Letter from the FBI to NWA"
-        title="Letter from the FBI to NWA"
-      />
-    </a>
+
+    <p>
+      <a
+        id="link-fbi-to-nwa"
+        href="https://www.newseum.org/exhibits_rockhall_nwa/"
+      >
+        <img
+          id="fbi-to-nwa"
+          src="images/fbi_nwa.jpg"
+          alt="Letter from the FBI to NWA"
+          title="Letter from the FBI to NWA"
+        />
+      </a>
       It took some time for Hip-Hop to jump coasts to Los Angeles, but when it
       did, the artists did more than run with it. A gritty realism emerged that
       truly dove into the social and political issues of the day. Most famous
@@ -206,8 +207,8 @@
       <span id="first_word">Where</span> the sounds is
       <span id="last_word"> at.</span>
     </h2>
-   
-    <p> 
+
+    <p>
       <img
         id="drake"
         src="images/drake6.jpg"
@@ -309,41 +310,35 @@
         document.querySelector("img").onload = move;
         // onload of body, execute function "move"
 
-
-
-
-// below is slideshow
+        // below is slideshow
 
         const slides = [
-        "images/drake6.jpg",   
-        "images/lilbaby.jpg",
-        "images/action_bronson.jpg",
-        "images/tydollar.jpg",
-        "images/danileigh.jpg",
-        "images/jcole.jpg",
-        "images/kendrick_lamar.jpg",
-        "images/metrobooming.jpg",
-        "images/nipsey.jpg",
-      ];
-      let s = 0;
+          "images/drake6.jpg",
+          "images/lilbaby.jpg",
+          "images/action_bronson.jpg",
+          "images/tydollar.jpg",
+          "images/danileigh.jpg",
+          "images/jcole.jpg",
+          "images/kendrick_lamar.jpg",
+          "images/metrobooming.jpg",
+          "images/nipsey.jpg",
+        ];
+        let s = 0;
 
-      const image = document.getElementById("drake");
+        const image = document.getElementById("drake");
 
-      function slideShow() {
-        if (s === slides.length) {
-          s = 0;
+        function slideShow() {
+          if (s === slides.length) {
+            s = 0;
+          }
+          image.src = slides[s];
+
+          s = s + 1;
+
+          setTimeout(slideShow, 3000);
         }
-        image.src = slides[s];
 
-        s = s + 1;
-
-        setTimeout(slideShow, 3000);
-      }
-
-      document.querySelector("body").onload = slideShow;
-
-
-
+        document.querySelector("body").onload = slideShow;
       </script>
     </div>
   </body>

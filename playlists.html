@@ -2,42 +2,96 @@
 <html lang="en">
   <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-169811441-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-169811441-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-  gtag('config', 'UA-169811441-1');
-</script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="Hip-Hop, Rap, Kanye West, Kendrick Lamar, Review, Music,
+      gtag("config", "UA-169811441-1");
+    </script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="keywords"
+      content="Hip-Hop, Rap, Kanye West, Kendrick Lamar, Review, Music,
     YG, Lyric, Lyrics, Song, Songs, 10, Score, Notorious North, Mighty Midwest, Westside Whistle,
-    Dirty South, Incredible, Pregame, Boyz, Laidback, Sounds, Styles, Culture">
-    <meta name="description" content="Steven reviews Hip-Hop music from all corners of the Americas">
-    <meta name="author" content="Steven McDermott">
-  <title>Playlists</title>
+    Dirty South, Incredible, Pregame, Boyz, Laidback, Sounds, Styles, Culture"
+    />
+    <meta
+      name="description"
+      content="Steven reviews Hip-Hop music from all corners of the Americas"
+    />
+    <meta name="author" content="Steven McDermott" />
+    <title>Playlists</title>
     <link rel="stylesheet" type="text/css" href="/styles/rtd.css" />
-    <link id="rtdstyle" rel="stylesheet" type="text/css" href="/styles/rtd.css">
-    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
-    <link rel="manifest" href="images/site.webmanifest">
+    <link
+      id="rtdstyle"
+      rel="stylesheet"
+      type="text/css"
+      href="/styles/rtd.css"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="images/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="images/favicon-16x16.png"
+    />
+    <link rel="manifest" href="images/site.webmanifest" />
   </head>
   <hr />
   <body>
     <h1>my tailored <span id="title">&nbsp; PLAYLISTS &nbsp; </span></h1>
     <nav>
       <ul>
-          <li> <h4 id="sitemaplinks"><a href="index.html"> &nbsp; Home &nbsp; </a></h4> </li>
-          <li> <h4 id="sitemaplinks"><a href="song_info.html"> &nbsp; Song Data &nbsp; </a></h4> </li>
-          <li> <h4 id="sitemaplinks"><a href="NSFW.html"> &nbsp; Playlists &nbsp; </a></h4> </li>
-          <li> <h4 id="sitemaplinks"><a href="about_the_artist.html"> &nbsp; About the Artist &nbsp; </a></h4> </li>
-          <li> <h4 id="sitemaplinks"><a href="history.html"> &nbsp; History &nbsp; </a></h4> </li>
-          <li> <h4 id="sitemaplinks"><a href="contact.html"> &nbsp; Contact &nbsp; </a></h4> </li>
+        <li>
+          <h4 id="sitemaplinks">
+            <a href="index.html"> &nbsp; Home &nbsp; </a>
+          </h4>
+        </li>
+        <li>
+          <h4 id="sitemaplinks">
+            <a href="song_info.html"> &nbsp; Song Data &nbsp; </a>
+          </h4>
+        </li>
+        <li>
+          <h4 id="sitemaplinks">
+            <a href="NSFW.html"> &nbsp; Playlists &nbsp; </a>
+          </h4>
+        </li>
+        <li>
+          <h4 id="sitemaplinks">
+            <a href="about_the_artist.html"> &nbsp; About the Artist &nbsp; </a>
+          </h4>
+        </li>
+        <li>
+          <h4 id="sitemaplinks">
+            <a href="history.html"> &nbsp; History &nbsp; </a>
+          </h4>
+        </li>
+        <li>
+          <h4 id="sitemaplinks">
+            <a href="contact.html"> &nbsp; Contact &nbsp; </a>
+          </h4>
+        </li>
       </ul>
-  </nav>
+    </nav>
 
     <h2>
       <span id="first_word">Songs</span>&nbsp;from across the
@@ -145,27 +199,28 @@
 
     <div>
       <!-- below, sitemap -->
-      <button id="sitemap_universal"><a href="project_sitemap.html" class="sitemap_universal"><img src="/images/globe.png" alt="send" height="18px"></a>
+      <button id="sitemap_universal">
+        <a href="project_sitemap.html" class="sitemap_universal"
+          ><img src="/images/globe.png" alt="send" height="18px"
+        /></a>
       </button>
-       <!-- below, dark mode button, doesn't work on this page for some reason so I disabled it -->
-       <button class="fixedbutton" onclick="darkMode()">
-      <img src="/images/dark_mode.png" alt="DarkMode" height="25px">
+      <!-- below, dark mode button, doesn't work on this page for some reason so I disabled it -->
+      <button class="fixedbutton" onclick="darkMode()">
+        <img src="/images/dark_mode.png" alt="DarkMode" height="25px" />
       </button>
 
+      <script>
+        // TODO: DARK MODE button
+        // Get HTML head element
+        function darkMode() {
+          var element = document.body;
+          element.classList.toggle("dark-mode");
 
-    <script>
-
-// TODO: DARK MODE button
-    // Get HTML head element 
-   function darkMode() {
-       var element = document.body;
-       element.classList.toggle("dark-mode");
-
-    document.getElementsByClassName("fixedbutton").onclick = darkMode
-       }
-</script>
-  </div>
-       <!-- above, dark mode button -->
-       <!-- a tedious solution I can do is make a dark mode html of every page and duplicate pages -->
-         </body>
+          document.getElementsByClassName("fixedbutton").onclick = darkMode;
+        }
+      </script>
+    </div>
+    <!-- above, dark mode button -->
+    <!-- a tedious solution I can do is make a dark mode html of every page and duplicate pages -->
+  </body>
 </html>
