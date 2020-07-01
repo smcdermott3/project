@@ -6,7 +6,6 @@ h1 {
   text-align: center;
   color: black;
   font-family: Verdana;
-  font-size: 2vw;
 }
 #title {
   color: rgb(180, 1, 1);
@@ -86,9 +85,8 @@ button:hover {
 
 nav ul {
   list-style-type: none;
-
   text-align: center;
-  font-size: 1vw;
+
 }
 nav li {
   display: inline-block;
