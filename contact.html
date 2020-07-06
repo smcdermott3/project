@@ -277,7 +277,7 @@ form AND button function. -->
           document.getElementsByClassName("fixedbutton").onclick = darkMode;
         }
 
-        function display() {
+        function sendForm() {
           // get input values from variables
           const myForm = document.querySelector("form");
           const lastName = myForm["lname"].value;
@@ -295,7 +295,7 @@ form AND button function. -->
             alert("Please enter name, email, and comment");
           }
         }
-        document.querySelector(".submit").onclick = display;
+        document.querySelector(".submit").onclick = sendForm;
 
         // magnify map, get element and increase width by 1.5
         function magnify() {
